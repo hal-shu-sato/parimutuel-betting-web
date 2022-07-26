@@ -17,6 +17,11 @@
     "web-vitals": "^2.1.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "3.3.0",
+    "cz-conventional-changelog-ja": "^0.0.2",
     "eslint": "^8.20.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.5.0",
@@ -40,7 +45,8 @@
     "lint:eslint": "eslint --fix-dry-run .",
     "fix": "run-s fix:prettier fix:eslint",
     "fix:prettier": "prettier --write .",
-    "fix:eslint": "eslint --fix ."
+    "fix:eslint": "eslint --fix .",
+    "cm": "npx cz"
   },
   "browserslist": {
     "production": [
@@ -55,6 +61,11 @@
     ]
   },
   "homepage": "https://hal-shu-sato.github.io/parimutuel-betting-web",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "prettier --write",
