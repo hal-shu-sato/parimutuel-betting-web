@@ -8,7 +8,13 @@
   "parserOptions": {
     "ecmaVersion": 2020
   },
-  "extends": ["eslint:recommended", "google", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "google",
+    "react-app",
+    "react-app/jest",
+    "prettier"
+  ],
   "rules": {
     "prefer-arrow-callback": "error"
   }
