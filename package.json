@@ -6,7 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "run-s lint:ts lint:prettier lint:next",
+    "lint:next": "next lint",
+    "lint:prettier": "prettier --check .",
+    "lint:ts": "tsc --incremental false --noEmit",
+    "fix": "run-s fix:prettier fix:next",
+    "fix:next": "next lint --fix",
+    "fix:prettier": "prettier --write .",
+    "prepare": "husky install",
+    "cm": "cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "dependencies": {
     "next": "14.0.0",
