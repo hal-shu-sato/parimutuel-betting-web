@@ -1,8 +1,9 @@
-const prefixPath = process.env.NODE_ENV === "production" ? "/parimutuel-betting-web" : "";
+const prefixPath =
+  process.env.NODE_ENV === 'production' ? '/parimutuel-betting-web' : '';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
+  output: 'export',
 
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   // trailingSlash: true,
@@ -20,4 +21,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig
+module.exports = nextConfig;
