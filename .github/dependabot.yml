@@ -16,6 +16,9 @@ updates:
       typescript-eslint:
         patterns:
           - '@typescript-eslint/*'
+      prettier:
+        patterns:
+          - 'prettier*'
 
   - package-ecosystem: 'github-actions'
     directory: '/'
