@@ -39,7 +39,7 @@
     "cz-conventional-changelog": "^3.3.0",
     "cz-conventional-changelog-ja": "^0.0.2",
     "eslint": "^8",
-    "eslint-config-next": "14.0.4",
+    "eslint-config-next": "14.1.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "husky": "^8.0.3",
