@@ -13,7 +13,7 @@
     "fix": "run-s fix:prettier fix:next",
     "fix:next": "next lint --fix",
     "fix:prettier": "prettier --write .",
-    "prepare": "husky install",
+    "prepare": "husky",
     "cm": "cz"
   },
   "config": {
