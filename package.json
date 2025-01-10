@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "run-s lint:ts lint:prettier lint:next",
+    "lint": "run-s -c lint:ts lint:next lint:prettier",
     "lint:next": "next lint",
     "lint:prettier": "prettier --check .",
     "lint:ts": "tsc --incremental false --noEmit",
-    "fix": "run-s fix:prettier fix:next",
+    "fix": "run-s fix:next fix:prettier",
     "fix:next": "next lint --fix",
     "fix:prettier": "prettier --write .",
     "prepare": "husky",
@@ -22,24 +22,26 @@
     }
   },
   "dependencies": {
-    "next": "^14.2.23",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "next": "15.1.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.17.0",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/eslint__eslintrc": "^2.1.2",
+    "@types/lint-staged": "^13.3.0",
     "@types/node": "^22.10.5",
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5",
-    "@typescript-eslint/eslint-plugin": "^8.19.1",
-    "@typescript-eslint/parser": "^8.19.1",
-    "autoprefixer": "^10.4.20",
+    "@types/react": "^19.0.4",
+    "@types/react-dom": "^19.0.2",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "cz-conventional-changelog-ja": "^0.0.2",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "^14.2.23",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "15.1.4",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.31.0",
     "husky": "^9.1.7",
@@ -50,7 +52,8 @@
     "prettier-plugin-packagejson": "^2.5.6",
     "prettier-plugin-tailwindcss": "^0.6.9",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.19.1"
   },
   "packageManager": "yarn@1.22.22"
 }

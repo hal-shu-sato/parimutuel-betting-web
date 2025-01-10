@@ -13,12 +13,19 @@ updates:
       commitlint:
         patterns:
           - '@commitlint/*'
+      next:
+        patterns:
+          - '@next/*'
+          - 'next'
+          - 'eslint-config-next'
+      react:
+        patterns:
+          - 'react'
+          - 'react-dom'
       eslint:
         patterns:
+          - '@eslint/*'
           - 'eslint*'
-      typescript-eslint:
-        patterns:
-          - '@typescript-eslint/*'
       prettier:
         patterns:
           - 'prettier*'
